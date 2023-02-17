@@ -4,7 +4,11 @@ public class Main {
     }
     public static  void task1(){
         int deposit = 0;
-        while(){
+        int month = 0;
+        while(deposit < 2459000){
+            deposit = deposit + 15000 ;
+            month = month + 1;
+            System.out.println("Месяц "+ month + ", сумма накоплений равна " + deposit + " рублей");
 
         }
     }
