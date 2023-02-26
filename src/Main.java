@@ -6,6 +6,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static  void task1(){
         System.out.println("Task 1");
@@ -55,6 +56,20 @@ public class Main {
             month = month + 1;
             System.out.println("Денег: "+ deposit +" ; месяц" + month);
 
+        }
+    }
+    public static  void task5(){
+        System.out.println("Task 5");
+        int deposit = 15000;
+        int monthPlus = deposit/100*7;
+        int month = 0;
+        while(deposit < 12000000){
+            deposit = deposit + monthPlus;
+            monthPlus = deposit/100*7;
+            month = month + 1;
+            if (month % 6 == 0) {
+                System.out.println("Денег: " + deposit + " ; месяц" + month);
+            }
         }
     }
 }
