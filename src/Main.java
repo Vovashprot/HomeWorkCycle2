@@ -7,6 +7,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
     public static  void task1(){
         System.out.println("Task 1");
@@ -70,6 +72,27 @@ public class Main {
             if (month % 6 == 0) {
                 System.out.println("Денег: " + deposit + " ; месяц" + month);
             }
+        }
+    }
+    public static  void task6(){
+        System.out.println("Task 6");
+        int deposit = 15000;
+        int monthPlus = deposit/100*7;
+        int month = 0;
+        while(month < (9*12)){
+            deposit = deposit + monthPlus;
+            monthPlus = deposit/100*7;
+            month = month + 1;
+            if (month % 6 == 0) {
+                System.out.println("Денег: " + deposit + " ; месяц" + month);
+            }
+        }
+    }
+    public static  void task7(){
+        System.out.println("Task 7");
+        int friday = 3;
+        for (int i = 1; i<=31; i= i + 7){
+                System.out.println(i);
         }
     }
 }
