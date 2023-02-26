@@ -9,6 +9,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static  void task1(){
         System.out.println("Task 1");
@@ -93,6 +94,14 @@ public class Main {
         int friday = 3;
         for (int i = 1; i<=31; i= i + 7){
                 System.out.println(i);
+        }
+    }
+    public static  void task8(){
+        System.out.println("Task 8");
+        for (int i = 0; i<=2123; i = i + 79){
+            if (i>=1823) {
+                System.out.println(i);
+            }
         }
     }
 }
